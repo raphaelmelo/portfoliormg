@@ -33,6 +33,7 @@ const SkillsWrapperStyled = Styled.article`
       display:flex;
       align-items:center;
       justify-content:center;
+
       @media (max-width: 400px){
       padding: 50px 0 0 0 ;
       flex-direction:column;
@@ -51,7 +52,7 @@ const SkillsWrapperStyled = Styled.article`
           margin-bottom:0;
           margin:0;
           padding:0;
-          font-size:clamp(18px, 3vw, 1.6rem);
+          font-size:clamp(1.3rem, 3vw, 1.6rem);
 
 
         }

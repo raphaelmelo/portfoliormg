@@ -49,6 +49,21 @@ const NavStyled = Styled.nav`
       text-transform:uppercase;
      }
 
+     .link {
+      background:#fff;
+      border-radius: 4px;
+      color: #00C2FF;
+      padding: 2px 4px;   
+      transition:.2s;
+
+      :hover {
+        background:#00C2FF;
+        color: #fff;
+        transition:.2s;
+
+      }
+     }
+
 `
 
 const Header = () => {
@@ -60,9 +75,9 @@ const Header = () => {
         </LogoStyled>
         <NavStyled>
           <ul>
-            <li> Home </li>
-            <li><Link to="/portfolio">Portfólio</Link></li>
-            <li><Link to="/contato">Contato</Link></li>
+            <li><Link to="#portfolio">Portfólio</Link></li>
+            <li><Link to="#contact" className="link">Github</Link></li>
+            <li><Link to="#contact" className="link">Linkdin</Link></li>
           </ul>
         </NavStyled>
       </HeaderStyled>

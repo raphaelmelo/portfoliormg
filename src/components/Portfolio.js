@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Typography from '@material-ui/core/Typography';
+import React, { useState, useEffect } from 'react'
+import Typography from '@material-ui/core/Typography'
 import Styled from 'styled-components'
-import Fade from 'react-reveal/Fade';
-import Container from '@material-ui/core/Container';
+import Fade from 'react-reveal/Fade'
+import Container from '@material-ui/core/Container'
 
-import Button from '@material-ui/core/Button';
-
-
+import Button from '@material-ui/core/Button'
 
 const WrapperStyled = Styled.section`
 
@@ -18,7 +16,6 @@ const TextWrapperStyled = Styled.article`
     flex-direction:column;
     align-items:center;
     justify-content:center;
-
     text-transform:uppercase;
        
       h1, h2, h3 {
@@ -26,28 +23,25 @@ const TextWrapperStyled = Styled.article`
         text-transform: uppercase;
         line-height: 90%;
       } 
+
       span {
         color: #00C2FF;      }  
     
  `
 const ContainerMaterial = Styled(Container)`
-  display:flex;
-  flex-direction:column;
-  height: 100%;
+    display:flex;
+    flex-direction:column;
+    height: 100%;
 
  `
 const FiltersWrapper = Styled.article` 
     width:100%;
-
     padding: 100px 0 30px ;
-
     display:flex;
     align-items:center;
     justify-content:flex-start;
-
     gap:20px;
-        
-    
+           
     button {
       width: 200px;
       height: 40px;
@@ -55,8 +49,8 @@ const FiltersWrapper = Styled.article`
       border-radius: 4px;
       text-transform:uppercase;
       font-size:clamp(0.6rem, 75%, 4rem);
-
       background: #0B3D61; 
+       
        :hover{
         background: #00c2ff; 
 
@@ -71,21 +65,20 @@ const FiltersWrapper = Styled.article`
 
 `
 const PortfolioWrapper = Styled.main` 
-    
-
-    
     padding: 40px 0;
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap: 40px;
+    gap: 20px;
 
 
 `
 const PortfolioItem = Styled.article` 
     width: 45%;
     min-width:260px; 
-
+    height: auto;
+    padding-bottom:20px;
+    
     img {
       width:100%;
       border-radius: 4px;
@@ -94,7 +87,6 @@ const PortfolioItem = Styled.article`
 const PortfolioItemFilter = Styled.article` 
     width: 100%;
     height:80px;
-
     background-color: #006DBC;
     display:flex;
 
@@ -109,162 +101,180 @@ const PortfolioItemFilter = Styled.article`
     .titleItem {
     background-color:#2CAFFF;
     font-size:28px;
-
-
-
     }
 
     .descriptionItem {
       background-color:#006DBC;
       width:100%; 
       font-size:20px;
-
     }
 
 `
 
-
 const Portfolio = () => {
-
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [filterArr, setFilterArr] = useState("");
-
-
+  const [isDesktop, setIsDesktop] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const [filterArr, setFilterArr] = useState('')
 
   useEffect(() => {
     if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
+      setIsDesktop(true)
+      setIsMobile(false)
     } else {
-      setIsMobile(true);
-      setIsDesktop(false);
+      setIsMobile(true)
+      setIsDesktop(false)
     }
-    setFilterArr("")
-  }, []);
-
+    setFilterArr('')
+  }, [])
 
   const dataProjects = [
     {
-      name: "BarDireirinho.com",
-      description: "Site institucional do Bar Direitinho.com",
-      type: "Freela",
-      url: "http://direitinho.com/",
-      image: "https://res.cloudinary.com/doligjahp/image/upload/v1616356327/samples/raphaelmelo/direitinho_vlzdlv.png",
-      tech: "website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;"
-
+      name: 'BarDireirinho.com',
+      description: 'Site institucional do Bar Direitinho.com',
+      type: 'Freela',
+      url: 'http://direitinho.com/',
+      image:
+        'https://res.cloudinary.com/doligjahp/image/upload/v1616356327/samples/raphaelmelo/direitinho_vlzdlv.png',
+      tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
     },
     {
-      name: "Mila Descartaveis",
-      description: "Site institucional da Mila Descartáveis",
-      type: "Freela",
-      url: "https://miladescartaveis.com.br/",
-      image: "https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/mila_a9vd6c.png",
-      tech: "website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;"
-
+      name: 'Mila Descartaveis',
+      description: 'Site institucional da Mila Descartáveis',
+      type: 'Freela',
+      url: 'https://miladescartaveis.com.br/',
+      image:
+        'https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/mila_a9vd6c.png',
+      tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
     },
     {
-      name: "Javascript Estudo",
-      description: "Marvel API",
-      type: "Projeto",
-      url: "https://marvelapibyraphaelmelo.netlify.app/",
-      image: "https://res.cloudinary.com/doligjahp/image/upload/v1616356327/samples/raphaelmelo/marvel_hbfoh9.png",
-      tech: "MVC: HTML, CSS, JAVASCRIPT,"
-
+      name: 'Javascript Estudo',
+      description: 'Marvel API',
+      type: 'Projeto',
+      url: 'https://marvelapibyraphaelmelo.netlify.app/',
+      image:
+        'https://res.cloudinary.com/doligjahp/image/upload/v1616356327/samples/raphaelmelo/marvel_hbfoh9.png',
+      tech: 'MVC: HTML, CSS, JAVASCRIPT,',
     },
     {
-      name: "Carreira Unica Estudo",
-      description: "Estudos",
-      type: "Projeto",
-      url: "https://aulascarreiraunica.netlify.app/",
-      image: "https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/carreiraUnica_hbqzhj.png",
-      tech: "Site com aulas do projeto Carreira Única"
-
+      name: 'Carreira Unica Estudo',
+      description: 'Estudos',
+      type: 'Projeto',
+      url: 'https://aulascarreiraunica.netlify.app/',
+      image:
+        'https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/carreiraUnica_hbqzhj.png',
+      tech: 'Site com aulas do projeto Carreira Única',
     },
     {
-      name: "Javascript Estudo",
-      description: "Javascript Estudos",
-      type: "Projeto",
-      url: "https://colors-names-raphael-melo.netlify.app/",
-      image: "https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/colors_izlmgd.png",
-      tech: "Praticando com JAVASCRIPT"
-
+      name: 'Javascript Estudo',
+      description: 'Javascript Estudos',
+      type: 'Projeto',
+      url: 'https://colors-names-raphael-melo.netlify.app/',
+      image:
+        'https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/colors_izlmgd.png',
+      tech: 'Praticando com JAVASCRIPT',
     },
     {
-      name: "Javascript Estudo",
-      description: "Javascript Estudos",
-      type: "Projeto",
-      url: "https://animal-it-rapael-melo.netlify.app/",
-      image: "https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/animals_tmus7c.png",
-      tech: "Praticando com JAVASCRIPT"
-
-    }
-  ];
+      name: 'Javascript Estudo',
+      description: 'Javascript Estudos',
+      type: 'Projeto',
+      url: 'https://animal-it-rapael-melo.netlify.app/',
+      image:
+        'https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/animals_tmus7c.png',
+      tech: 'Praticando com JAVASCRIPT',
+    },
+  ]
 
   function handleProjectFilter() {
-    setFilterArr("Freela")
-    console.log("Freela")
+    setFilterArr('Freela')
+    console.log('Freela')
   }
   function handleFreelasFilter() {
-    setFilterArr("Projeto")
-    console.log("Projeto")
-
+    setFilterArr('Projeto')
+    console.log('Projeto')
   }
   function handleFilter() {
-    setFilterArr("")
-
+    setFilterArr('')
   }
 
-  const Filters = dataProjects.filter(item => item.type !== filterArr).map((item) => {
-    return (
-      <PortfolioItem>
-        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
-          <a href={item.url} rel="noreferrer" target="_blank">
-            <img src={item.image} alt={item.description} title="Acesse!" />
-          </a>
-          <PortfolioItemFilter>
-            <article className="titleItem">
-              {item.type}
-            </article>
-            <article className="descriptionItem">
-              {item.tech}
-            </article>
-          </PortfolioItemFilter>
-        </Fade>
-      </PortfolioItem >
-    )
-  })
-
-
-
-
+  const Filters = dataProjects
+    .filter(item => item.type !== filterArr)
+    .map(item => {
+      return (
+        <PortfolioItem>
+          <Fade
+            left={isDesktop}
+            bottom={isMobile}
+            duration={500}
+            delay={500}
+            distance="30px"
+          >
+            <a href={item.url} rel="noreferrer" target="_blank">
+              <img src={item.image} alt={item.description} title="Acesse!" />
+            </a>
+            <PortfolioItemFilter>
+              <article className="titleItem">{item.type}</article>
+              <article className="descriptionItem">{item.tech}</article>
+            </PortfolioItemFilter>
+          </Fade>
+        </PortfolioItem>
+      )
+    })
 
   return (
-    <WrapperStyled>
+    <WrapperStyled id="portfolio">
       <TextWrapperStyled>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={1000}
+          delay={500}
+          distance="30px"
+        >
           <>
-            <Typography variant="h2" components="h2">Portfolio</Typography>
-            <Typography variant="h2" components="h2"><span>& projetos</span></Typography>
+            <Typography variant="h2" components="h2">
+              Portfolio
+            </Typography>
+            <Typography variant="h2" components="h2">
+              <span>& projetos</span>
+            </Typography>
           </>
         </Fade>
       </TextWrapperStyled>
 
       <ContainerMaterial>
-
         <FiltersWrapper>
-          <Button className="todos" variant="contained" size="medium" onClick={handleFilter}> Todos </Button>
-          <Button className="freelas" variant="contained" size="medium" onClick={handleFreelasFilter} > Freelas </Button>
-          <Button className="projetos" variant="contained" size="medium" onClick={handleProjectFilter} > Projetos </Button>
+          <Button
+            className="todos"
+            variant="contained"
+            size="medium"
+            onClick={handleFilter}
+          >
+            {' '}
+            Todos{' '}
+          </Button>
+          <Button
+            className="freelas"
+            variant="contained"
+            size="medium"
+            onClick={handleFreelasFilter}
+          >
+            {' '}
+            Freelas{' '}
+          </Button>
+          <Button
+            className="projetos"
+            variant="contained"
+            size="medium"
+            onClick={handleProjectFilter}
+          >
+            {' '}
+            Projetos{' '}
+          </Button>
         </FiltersWrapper>
-        <PortfolioWrapper>
-          {Filters}
-        </PortfolioWrapper>
+        <PortfolioWrapper>{Filters}</PortfolioWrapper>
       </ContainerMaterial>
-
-    </WrapperStyled >
+    </WrapperStyled>
   )
 }
 
-export default Portfolio;
+export default Portfolio
