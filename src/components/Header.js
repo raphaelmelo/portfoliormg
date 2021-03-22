@@ -71,13 +71,15 @@ const Header = () => {
     <Container>
       <HeaderStyled>
         <LogoStyled>
-          <img src={Logo} alt="Logo do Site" Title="raphaelmelo.dev" />
+          <Link to="/">
+            <img src={Logo} alt="Logo do Site" Title="raphaelmelo.dev" />
+          </Link>
         </LogoStyled>
         <NavStyled>
           <ul>
             <li><Link to="#portfolio">Portfólio</Link></li>
-            <li><Link to="#contact" className="link">Github</Link></li>
-            <li><Link to="#contact" className="link">Linkdin</Link></li>
+            <li><Link to="https://github.com/raphaelmelo" target="_blank" className="link">Github</Link></li>
+            <li><Link to="https://www.linkedin.com/in/raphaelgois/" target="_blank" className="link">Linkedin</Link></li>
           </ul>
         </NavStyled>
       </HeaderStyled>

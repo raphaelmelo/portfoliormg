@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Typography from '@material-ui/core/Typography'
 import Styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
+import { Link } from "gatsby"
 
 const WrapperContact = Styled.section`
   height: 400px;
@@ -21,6 +22,8 @@ const TextWrapperStyled = Styled.article`
         font-family: Bangers, "sans serif";
         text-transform: uppercase;
         line-height: 90%;
+        font-size:clamp(2.7rem, 5vw, 2.9rem)
+
  
       } 
       span {
@@ -86,9 +89,9 @@ const Contact = () => {
               </Typography>
               <Typography variant="h2" components="h2">
                 <span>
-                  <a href="mailto:contatowbm@gmail.com" className="link" title="Clique aqui e me mande um email!">EMAIL</a>
+                  <Link to="mailto:contatowbm@gmail.com/" target="_blank" className="link">EMAIL</Link>
                   <span> OU </span>
-                  <a href="linkedin.com/in/raphaelgois" className="link" title="Clique aqui e conecte-se">Linkedin</a>
+                  <Link to="https://www.linkedin.com/in/raphaelgois/" target="_blank" className="link">Linkedin</Link>
                 </span>!
               </Typography>
             </>

@@ -14,7 +14,7 @@ const HomeStyled = Styled.main`
     align-items:center;
     justify-content:space-evenly;
 
-    @media (max-width: 400px){
+    @media (max-width: 425px){
       padding-top:50px;
       flex-direction:column;
       justify-content:flex-start;
@@ -60,7 +60,7 @@ const Confetes = Styled.article`
         z-index:-1;
         width: 15vw;
         min-width: 120px;   
-        @media (max-width: 400px){
+        @media (max-width: 425px){
           display:none;
  
     }
@@ -80,6 +80,7 @@ const TitleStyled = Styled.article`
         font-family: Bangers;
         text-transform: uppercase;
         line-height: 90%;
+        font-size:clamp(2.8rem, 6vw, 6rem)
 
       } 
       span {
@@ -87,7 +88,7 @@ const TitleStyled = Styled.article`
 
       }
       .textDescription {
-        font-size:clamp(24px, 5vw, 2.9rem)
+        font-size:clamp(32px, 4vw, 2.4rem)
 
       }
 `

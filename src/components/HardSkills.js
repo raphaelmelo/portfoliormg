@@ -34,7 +34,7 @@ const SkillsWrapperStyled = Styled.article`
       align-items:center;
       justify-content:center;
 
-      @media (max-width: 400px){
+      @media (max-width: 425px){
       padding: 50px 0 0 0 ;
       flex-direction:column;
 
