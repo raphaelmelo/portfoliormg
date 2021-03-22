@@ -1,7 +1,7 @@
 {
-  "name": "Raphael Melo",
+  "name": "gatsby-starter-material-ui",
   "private": true,
-  "description": "Desenvolvedor front-end",
+  "description": "A simple starter to get up and developing quickly with Gatsby and Material UI",
   "version": "0.1.0",
   "author": "Dominic Abela <djmabela@gmail.com>",
   "dependencies": {
