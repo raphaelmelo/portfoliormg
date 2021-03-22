@@ -114,7 +114,7 @@ const HardSkills = () => {
     <WrapperStyled>
       <TextWrapperStyled>
         <Fade left={isDesktop} bottom={isMobile} duration={10} delay={200} distance="30px">
-          <Typography variant="h2" components="h1">HardSkills</Typography>
+          <Typography variant="h2" components="h2">HardSkills</Typography>
         </Fade>
       </TextWrapperStyled>
 

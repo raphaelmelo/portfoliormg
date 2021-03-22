@@ -80,7 +80,6 @@ const TitleStyled = Styled.article`
         font-family: Bangers;
         text-transform: uppercase;
         line-height: 90%;
-        font-size:clamp(3rem, 7vw, 6rem)
 
       } 
       span {
