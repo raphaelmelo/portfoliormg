@@ -135,7 +135,7 @@ const HardSkills = () => {
         </Fade>
 
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={450} distance="30px">
-          <article class="stageAnimation">
+          <article className="stageAnimation">
             <img src={Poom} className="box bounce-3" alt="Poom" title="Essas são algumas das Skills tecnicas do Rapha!" />
           </article>
         </Fade>

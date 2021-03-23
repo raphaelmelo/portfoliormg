@@ -27,13 +27,13 @@ const HomeStyled = Styled.main`
 const RostoStyled = Styled.article`
 
      img {
-
-       width: 20vw;
        min-width: 60px;
- 
-      cursor:pointer;
+       cursor:pointer;
     }
+  
     .rotateAnimation {
+      width: 120px;
+
         animation: rotation 1.2s infinite linear;
 
         @keyframes rotation {
@@ -48,6 +48,27 @@ const RostoStyled = Styled.article`
     };
   };
 
+    .boxHead {
+	    display: flex;
+    }
+
+    .Head { 
+	      animation: jump 1.2s ease-in infinite;
+        animation-delay: 0.3s;
+        width:12vw;
+        :hover {
+
+        }
+        }
+        @keyframes jump {
+          0%, 100% {
+          transform: translateY(0);
+      }
+          50% {
+        transform: translateY(-10px);
+      }
+    }
+
 
 `
 const Confetes = Styled.article`
@@ -56,10 +77,11 @@ const Confetes = Styled.article`
 
        .reactLogo{
         position: absolute;
-        left: 50%;
+        left: 100%;
         z-index:-1;
-        width: 15vw;
+        width: 10vw;
         min-width: 120px;   
+
         @media (max-width: 425px){
           display:none;
  
@@ -80,7 +102,7 @@ const TitleStyled = Styled.article`
         font-family: Bangers;
         text-transform: uppercase;
         line-height: 90%;
-        font-size:clamp(2.8rem, 6vw, 6rem)
+        font-size:clamp(3.2rem, 6vw, 6rem)
 
       } 
       span {
@@ -88,7 +110,7 @@ const TitleStyled = Styled.article`
 
       }
       .textDescription {
-        font-size:clamp(32px, 4vw, 2.4rem)
+        font-size:clamp(26px, 4vw, 2.4rem)
 
       }
 `
@@ -120,8 +142,9 @@ const Home = () => {
             <Confetes>
               <img src={ReactLogo} className="rotateAnimation  reactLogo" alt="React" />
             </Confetes>
-            <img src={Raphael} alt="rosto do raphael melo" className="rotateAnimation" title="Oi, sou o rosto do Rapha em um loop infinito!" />
-
+            <div className="boxHead">
+              <img src={Raphael} alt="rosto do raphael melo" className="Head" title="Oi, sou o rosto do Rapha em um loop infinito!" />
+            </div>
           </RostoStyled>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={50} delay={200} distance="30px">

@@ -108,7 +108,7 @@ const Formation = () => {
     <WrapperStyled>
       <TextWrapperStyled>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={400} distance="30px">
-          <Typography variant="h2" components="h1">Formção</Typography>
+          <Typography variant="h2" components="h1">Formação</Typography>
         </Fade>
       </TextWrapperStyled>
 
