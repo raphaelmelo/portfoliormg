@@ -69,7 +69,7 @@ const PortfolioWrapper = Styled.section`
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
-    gap: 20px;
+    margin-left:20px ;
 
     @media (max-width: 425px){
       justify-content:center;
@@ -134,14 +134,7 @@ const Portfolio = () => {
   }, [])
 
   const dataProjects = [
-    {
-      name: 'BarDireirinho.com',
-      description: 'Site institucional do Bar Direitinho.com',
-      type: 'Freela',
-      url: 'http://direitinho.com/',
-      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505723/samples/raphaelmelo/direitinho_ist8jb.png',
-      tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
-    },
+
     {
       name: 'Mila Descartaveis',
       description: 'Site institucional da Mila Descartáveis',
@@ -157,6 +150,14 @@ const Portfolio = () => {
       url: 'https://marvelapibyraphaelmelo.netlify.app/',
       image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505723/samples/raphaelmelo/marvel_nipjm8.png',
       tech: 'MVC: HTML, CSS, JAVASCRIPT,',
+    },
+    {
+      name: 'BarDireirinho.com',
+      description: 'Site institucional do Bar Direitinho.com',
+      type: 'Freela',
+      url: 'http://direitinho.com/',
+      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505723/samples/raphaelmelo/direitinho_ist8jb.png',
+      tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
     },
     {
       name: 'Carreira Unica Estudo',
@@ -204,8 +205,8 @@ const Portfolio = () => {
           <Fade
             left={isDesktop}
             bottom={isMobile}
-            duration={500}
-            delay={500}
+            duration={300}
+            delay={300}
             distance="30px"
           >
             <a href={item.url} rel="noreferrer" target="_blank">

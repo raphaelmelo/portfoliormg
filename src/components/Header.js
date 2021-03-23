@@ -36,7 +36,7 @@ const NavStyled = Styled.nav`
         display:flex;
         justify-content:center;
         align-items:center;
-        gap:0 20px ;
+
     }
     li {
         list-style:none;
@@ -54,6 +54,7 @@ const NavStyled = Styled.nav`
       color: #00C2FF;
       padding: 2px 4px;   
       transition:.2s;
+      margin-left:20px ;
 
       :hover {
         background:#00C2FF;

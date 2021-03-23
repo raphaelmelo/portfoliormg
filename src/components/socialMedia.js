@@ -11,28 +11,17 @@ import TwitterLogo from '../images/twitter.svg'
 const SocialStyled = Styled.aside`
     display:flex;
     margin:0;
-    height: 10vh;
-    width:100%;
- 
+
     `
 
 const WrapperItems = Styled.article`
-  display:flex;
-  height: 100px;
-   align-items:center;
-   gap: 30px;
-   padding:0 0 30px;
-
- 
+  
   img {
     width:4vh;
     max-width:36px;
     min-width:16px;
-
-    cursor:pointer;
-  }
-
-
+    margin-right: 20px;
+    }
 
 `
 
