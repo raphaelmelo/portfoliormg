@@ -24,7 +24,7 @@ const LogoStyled = Styled.article`
     align-items:center;
     cursor:pointer;
     img {
-      width:80px;
+      width:70px;
     }
 
 `

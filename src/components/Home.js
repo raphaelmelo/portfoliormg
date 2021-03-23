@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Styled from 'styled-components'
 import Raphael from ".././images/rosto.webp"
-//import ConfetesImage from ".././images/confetes.svg"
+import ConfetesImage from ".././images/confetes.svg"
 import ReactLogo from ".././images/react.svg"
 import SocialMedia from "./socialMedia"
 import Fade from 'react-reveal/Fade';
@@ -27,7 +27,7 @@ const HomeStyled = Styled.main`
 const RostoStyled = Styled.article`
 
      img {
-       min-width: 60px;
+
        cursor:pointer;
     }
   
@@ -55,7 +55,7 @@ const RostoStyled = Styled.article`
     .Head { 
 	      animation: jump 1.2s ease-in infinite;
         animation-delay: 0.3s;
-        width:12vw;
+        width:14vw;
         :hover {
 
         }
@@ -69,25 +69,44 @@ const RostoStyled = Styled.article`
       }
     }
 
+    .confetesImage {
+        position: absolute;
+        left: 260px;
+        top: 400px;;
+        z-index:-1;
+        width: 100px;
+          
+        @media (max-width: 425px){
+          width: 30px;
+          left: 40%;
+          top: 25%;;
+        }
+        @media (max-width: 757px){
+          width: 50px;
+          left: 15%;
+          top: 50%;
+
+        }
+    }
 
 `
-const Confetes = Styled.article`
+const ReactLogoDiv = Styled.div`
        position: relative;
 
 
        .reactLogo{
         position: absolute;
-        left: 100%;
+        left: 90%;
         z-index:-1;
-        width: 10vw;
-        min-width: 120px;   
+        width: 100px;   
 
         @media (max-width: 425px){
-          display:none;
- 
-    }
+          width: 50px;   
 
-         }
+        }
+
+       
+      }
 
 
   
@@ -139,11 +158,12 @@ const Home = () => {
       <HomeStyled>
         <Fade left={isDesktop} bottom={isMobile} duration={150} delay={300} distance="30px">
           <RostoStyled>
-            <Confetes>
+            <ReactLogoDiv>
               <img src={ReactLogo} className="rotateAnimation  reactLogo" alt="React" />
-            </Confetes>
+            </ReactLogoDiv>
             <div className="boxHead">
-              <img src={Raphael} alt="rosto do raphael melo" className="Head" title="Oi, sou o rosto do Rapha em um loop infinito!" />
+              <img src={ConfetesImage} className="confetesImage Head" alt="confetesImage" />
+              <img src={Raphael} alt="rosto do raphael melo" className="Head" title="Oi, sou o rosto do Rapha!" />
             </div>
           </RostoStyled>
         </Fade>

@@ -67,7 +67,7 @@ const FiltersWrapper = Styled.article`
 const PortfolioWrapper = Styled.main` 
     padding: 40px 0;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     flex-wrap:wrap;
     gap: 20px;
 
@@ -133,8 +133,7 @@ const Portfolio = () => {
       description: 'Site institucional do Bar Direitinho.com',
       type: 'Freela',
       url: 'http://direitinho.com/',
-      image:
-        'https://res.cloudinary.com/doligjahp/image/upload/v1616356327/samples/raphaelmelo/direitinho_vlzdlv.png',
+      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505723/samples/raphaelmelo/direitinho_ist8jb.png',
       tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
     },
     {
@@ -142,17 +141,15 @@ const Portfolio = () => {
       description: 'Site institucional da Mila Descartáveis',
       type: 'Freela',
       url: 'https://miladescartaveis.com.br/',
-      image:
-        'https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/mila_a9vd6c.png',
+      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/mila_pk8ue7.png',
       tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
     },
     {
-      name: 'Javascript Estudo',
-      description: 'Marvel API',
+      name: 'Marvel API',
+      description: 'Javascript',
       type: 'Projeto',
       url: 'https://marvelapibyraphaelmelo.netlify.app/',
-      image:
-        'https://res.cloudinary.com/doligjahp/image/upload/v1616356327/samples/raphaelmelo/marvel_hbfoh9.png',
+      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505723/samples/raphaelmelo/marvel_nipjm8.png',
       tech: 'MVC: HTML, CSS, JAVASCRIPT,',
     },
     {
@@ -160,8 +157,7 @@ const Portfolio = () => {
       description: 'Estudos',
       type: 'Projeto',
       url: 'https://aulascarreiraunica.netlify.app/',
-      image:
-        'https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/carreiraUnica_hbqzhj.png',
+      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/unica_aer9ed.png',
       tech: 'Site com aulas do projeto Carreira Única',
     },
     {
@@ -169,8 +165,7 @@ const Portfolio = () => {
       description: 'Javascript Estudos',
       type: 'Projeto',
       url: 'https://colors-names-raphael-melo.netlify.app/',
-      image:
-        'https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/colors_izlmgd.png',
+      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/colors_d22cp4.png',
       tech: 'Praticando com JAVASCRIPT',
     },
     {
@@ -178,11 +173,10 @@ const Portfolio = () => {
       description: 'Javascript Estudos',
       type: 'Projeto',
       url: 'https://animal-it-rapael-melo.netlify.app/',
-      image:
-        'https://res.cloudinary.com/doligjahp/image/upload/v1616356326/samples/raphaelmelo/animals_tmus7c.png',
+      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/animal_mqyjsx.png',
       tech: 'Praticando com JAVASCRIPT',
     },
-  ]
+  ];
 
   function handleProjectFilter() {
     setFilterArr('Freela')

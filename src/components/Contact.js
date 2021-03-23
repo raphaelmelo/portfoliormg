@@ -5,11 +5,11 @@ import Fade from 'react-reveal/Fade'
 import { Link } from "gatsby"
 
 const WrapperContact = Styled.section`
-  height: 400px;
+  height: auto;
   width:100%;
 `
 const TextWrapperStyled = Styled.article`
-    height:400px;
+    height:90vh;
     background: #1467A4; 
     display:flex;
     flex-direction:column;
@@ -22,7 +22,7 @@ const TextWrapperStyled = Styled.article`
         font-family: Bangers, "sans serif";
         text-transform: uppercase;
         line-height: 90%;
-        font-size:clamp(2.7rem, 5vw, 2.9rem)
+        font-size:clamp(2.7rem, 5vw, 3.5rem)
 
  
       } 
@@ -46,10 +46,11 @@ const FooterContact = Styled.footer`
     text-align:center;
 
     h6 {
-      font-size:12px;
+      font-size:10px;
       color: #ddd;
       font-family:sans-serif;
-      text-transform:uppercase;
+      text-transform:uppercase; 
+      font-weight: 300;
     }
 
 
@@ -99,7 +100,7 @@ const Contact = () => {
         </TextWrapperStyled>
       </WrapperContact>
       <FooterContact>
-        <h6>desing & desenvolvimento por raphael melo © {Year.getFullYear()}</h6>
+        <h6>desing & desenvolvimento por raphael melo © {Year.getFullYear()} | GatsbyJs ❤</h6>
       </FooterContact>
     </>
   )
