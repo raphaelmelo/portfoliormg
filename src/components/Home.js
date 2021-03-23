@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import Typography from '@material-ui/core/Typography';
+import React, { useState, useEffect } from 'react'
+import Typography from '@material-ui/core/Typography'
 import Styled from 'styled-components'
-import Raphael from ".././images/rosto.webp"
-import ConfetesImage from ".././images/confetes.svg"
-import ReactLogo from ".././images/react.svg"
-import SocialMedia from "./socialMedia"
-import Fade from 'react-reveal/Fade';
-import Container from '@material-ui/core/Container';
+import Raphael from '.././images/rosto.webp'
+import ConfetesImage from '.././images/confetes.svg'
+import ReactLogo from '.././images/react.svg'
+import SocialMedia from './socialMedia'
+import Fade from 'react-reveal/Fade'
+import Container from '@material-ui/core/Container'
 
 const HomeStyled = Styled.main`
-  height:77vh;
+    height:77vh;
     display:flex;
     align-items:center;
     justify-content:space-evenly;
@@ -20,22 +20,14 @@ const HomeStyled = Styled.main`
       justify-content:flex-start;
  
     }
-
-
   
  `
 const RostoStyled = Styled.article`
 
-     img {
-
-       cursor:pointer;
-    }
-  
+ 
     .rotateAnimation {
       width: 120px;
-
-        animation: rotation 1.2s infinite linear;
-
+      animation: rotation 1.2s infinite linear;
         @keyframes rotation {
           from {
             transform: rotate(0deg);
@@ -44,9 +36,9 @@ const RostoStyled = Styled.article`
             transform: rotate(359deg);
           }
           }
-      }
-    };
-  };
+          }
+      };
+  };  
 
     .boxHead {
 	    display: flex;
@@ -127,44 +119,74 @@ const TitleStyled = Styled.article`
       }
 `
 
-
 const Home = () => {
-
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
+      setIsDesktop(true)
+      setIsMobile(false)
     } else {
-      setIsMobile(true);
-      setIsDesktop(false);
+      setIsMobile(true)
+      setIsDesktop(false)
     }
-  }, []);
-
-
+  }, [])
 
   return (
     <Container>
       <HomeStyled>
-        <Fade left={isDesktop} bottom={isMobile} duration={150} delay={300} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={150}
+          delay={300}
+          distance="30px"
+        >
           <RostoStyled>
             <ReactLogoDiv>
-              <img src={ReactLogo} className="rotateAnimation  reactLogo" alt="React" />
-              <img src={ConfetesImage} className="confetesImage Head" alt="confetesImage" />
+              <img
+                src={ReactLogo}
+                className="rotateAnimation  reactLogo"
+                alt="React"
+              />
+              <img
+                src={ConfetesImage}
+                className="confetesImage Head"
+                alt="confetesImage"
+              />
             </ReactLogoDiv>
             <div className="boxHead">
-              <img src={Raphael} alt="rosto do raphael melo" className="Head" title="Oi, sou o rosto do Rapha!" />
+              <img
+                src={Raphael}
+                alt="rosto do raphael melo"
+                className="Head"
+                title="Oi, sou o rosto do Rapha!"
+              />
             </div>
           </RostoStyled>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={50} delay={200} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={50}
+          delay={200}
+          distance="30px"
+        >
           <TitleStyled>
-            <Typography variant="h1" components="h1" >Raphael Melo</Typography>
-            <Typography variant="h1" components="h2"><span>DEV front-end</span></Typography>
-            <Typography variant="h3" components="h3" className="textDescription">portfólio, estudos e mais!</Typography>
+            <Typography variant="h1" components="h1">
+              Raphael Melo
+            </Typography>
+            <Typography variant="h1" components="h2">
+              <span>DEV front-end</span>
+            </Typography>
+            <Typography
+              variant="h3"
+              components="h3"
+              className="textDescription"
+            >
+              portfólio, estudos e mais!
+            </Typography>
           </TitleStyled>
         </Fade>
       </HomeStyled>
@@ -173,4 +195,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home
