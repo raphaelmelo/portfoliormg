@@ -64,12 +64,18 @@ const FiltersWrapper = Styled.article`
  
 
 `
-const PortfolioWrapper = Styled.main` 
+const PortfolioWrapper = Styled.section` 
     padding: 40px 0;
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
     gap: 20px;
+
+    @media (max-width: 425px){
+      justify-content:center;
+
+        }
+
 
 
 `

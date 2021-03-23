@@ -17,12 +17,11 @@ const HeaderStyled = Styled.header`
     `
 
 const LogoStyled = Styled.article`
-
     height: 10vh;
     display:flex;
-
     align-items:center;
     cursor:pointer;
+
     img {
       width:70px;
     }

@@ -69,25 +69,7 @@ const RostoStyled = Styled.article`
       }
     }
 
-    .confetesImage {
-        position: absolute;
-        left: 260px;
-        top: 400px;;
-        z-index:-1;
-        width: 100px;
-          
-        @media (max-width: 425px){
-          width: 30px;
-          left: 40%;
-          top: 25%;;
-        }
-        @media (max-width: 757px){
-          width: 50px;
-          left: 15%;
-          top: 50%;
-
-        }
-    }
+   
 
 `
 const ReactLogoDiv = Styled.div`
@@ -102,12 +84,23 @@ const ReactLogoDiv = Styled.div`
 
         @media (max-width: 425px){
           width: 50px;   
-
         }
-
-       
       }
 
+      .confetesImage {
+        position: absolute;
+        left: -60px;
+        top: 170px;;
+        z-index:-1;
+        width: 100px;
+          
+        @media (max-width: 425px){
+          width: 20px;
+          left: -30%;
+          top: 60px;
+        }
+ 
+    }
 
   
 `
@@ -160,9 +153,9 @@ const Home = () => {
           <RostoStyled>
             <ReactLogoDiv>
               <img src={ReactLogo} className="rotateAnimation  reactLogo" alt="React" />
+              <img src={ConfetesImage} className="confetesImage Head" alt="confetesImage" />
             </ReactLogoDiv>
             <div className="boxHead">
-              <img src={ConfetesImage} className="confetesImage Head" alt="confetesImage" />
               <img src={Raphael} alt="rosto do raphael melo" className="Head" title="Oi, sou o rosto do Rapha!" />
             </div>
           </RostoStyled>
