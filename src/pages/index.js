@@ -18,13 +18,12 @@ import Contact from "../components/Contact"
 const IndexPage = () => {
   return (
     <>
-      <Helmet htmlAttributes={{ lang: 'pt-br' }}>
-        <meta name="title" content="Raphael Melo - Dev Front-end" />
+      <Helmet  >
+        <meta charSet="utf-8" />
+        <title>Raphael Melo - Dev Front-end</title>
         <meta name="description" content="Sou Desenvolvedor Front-end e esse é meu portfólio!" />
-        <meta name="keywords" content="desenvolvedor, front-end, dev, javascript, react, full stack" />
-        <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="image" content="https://res.cloudinary.com/doligjahp/image/upload/v1616343035/samples/raphaelmelo/rosto_u1diwh.webp" />
+        <meta http-equiv="Content-Language" content="pt-br" />
       </Helmet>
 
       <Header />
