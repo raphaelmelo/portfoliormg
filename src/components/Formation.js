@@ -116,7 +116,7 @@ const Formation = () => {
           <article>
             <p>ADS <span>-</span> FACULDADE IMPACTA <span>01/21 - 06/23</span></p>
             <p>SISTEMAS PARA INTERNET <span>-</span> SENAI <span>09/20 - 03/22</span></p>
-            <p>DEV WEB FULLSTACK <span>-</span> BOOTCAMP LABENU <span>03 - 09/20</span></p>
+            <p>WEB FULL STACK <span>-</span> BOOTCAMP LABENU <span>03 - 09/20</span></p>
           </article>
         </Fade>
 

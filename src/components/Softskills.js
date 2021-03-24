@@ -118,7 +118,7 @@ const SoftSkills = () => {
           <article>
             <p>Organização</p>
             <p>Comunicação</p>
-            <p>Empátia</p>
+            <p>Empatia</p>
             <p>Trabalho em equipe</p>
             <p>Aprender a aprender</p>
             <p>proatividade</p>

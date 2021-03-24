@@ -146,11 +146,11 @@ const Portfolio = () => {
   const dataProjects = [
     {
       name: 'Marvel API',
-      description: 'Javascript',
+      description: 'Estudo Rest API com Javascript',
       type: 'Projeto',
       url: 'https://marvelapibyraphaelmelo.netlify.app/',
       image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505723/samples/raphaelmelo/marvel_nipjm8.png',
-      tech: 'MVC: HTML, CSS, JAVASCRIPT,',
+      tech: 'MVC: HTML, CSS, React, AntD;'
     },
     {
       name: 'Mila Descartaveis',
@@ -162,36 +162,36 @@ const Portfolio = () => {
     },
     {
       name: 'BarDireirinho.com',
-      description: 'Site institucional do Bar Direitinho.com',
+      description: 'Site para o Bar Direitinho.com',
       type: 'Freela',
       url: 'http://direitinho.com/',
       image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505723/samples/raphaelmelo/direitinho_ist8jb.png',
-      tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
+      tech: 'HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
     },
     {
       name: 'Carreira Unica Estudo',
-      description: 'Estudos',
+      description: 'Site com aulas do projeto Carreira Única',
       type: 'Projeto',
       url: 'https://aulascarreiraunica.netlify.app/',
       image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/unica_aer9ed.png',
-      tech: 'Site com aulas do projeto Carreira Única',
+      tech: 'HTML, CSS;'
     },
     {
-      name: 'Javascript Estudo',
+      name: 'Cores Dinamicas',
       description: 'Javascript Estudos',
       type: 'Projeto',
       url: 'https://colors-names-raphael-melo.netlify.app/',
       image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/colors_d22cp4.png',
-      tech: 'Praticando com JAVASCRIPT',
+      tech: 'HTML, CSS, Javascript;'
     },
     {
-      name: 'Javascript Estudo',
+      name: 'Animal Review',
       description: 'Javascript Estudos',
       type: 'Projeto',
       url: 'https://animal-it-rapael-melo.netlify.app/',
       image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/animal_mqyjsx.png',
-      tech: 'Praticando com JAVASCRIPT',
-    },
+      tech: 'HTML, CSS, Javascript;'
+    }
   ];
 
   function handleProjectFilter() {
