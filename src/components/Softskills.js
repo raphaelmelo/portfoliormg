@@ -3,7 +3,6 @@ import Typography from '@material-ui/core/Typography';
 import Styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 
-import Wow from '../images/wow.svg'
 
 const WrapperStyled = Styled.section`
     min-height:85vh;
@@ -16,7 +15,6 @@ const TextWrapperStyled = Styled.article`
     align-items:center;
     justify-content:center;
     text-transform:uppercase;
-       
 
       h1, h2, h3 {
         font-family: Bangers;
@@ -128,7 +126,7 @@ const SoftSkills = () => {
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={400} delay={400} distance="30px">
           <article class="stageAnimation">
-            <img src={Wow} className="box bounce-3" alt="Imagem com texto: Wow!" title="Essas são algumas das Softskills do Rapha!" />
+            <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343037/samples/raphaelmelo/wow_vdqesf.svg" className="box bounce-3" alt="Imagem com texto: Wow!" title="Essas são algumas das Softskills do Rapha!" />
           </article>
         </Fade>
       </SkillsWrapperStyled>

@@ -3,10 +3,6 @@ import Styled from 'styled-components'
 import Container from '@material-ui/core/Container';
 import { Link } from "gatsby"
 
-import GithubLogo from '../images/github.svg'
-import LinkedinLogo from '../images/linkedin.svg'
-import TwitterLogo from '../images/twitter.svg'
-
 
 const SocialStyled = Styled.aside`
     display:flex;
@@ -30,15 +26,14 @@ const Social = () => {
     <Container>
       <SocialStyled>
         <WrapperItems>
-
           <Link to="https://github.com/raphaelmelo/" target="_blank" className="link">
-            <img src={GithubLogo} alt="Logo github" title="Clique e acesse meu github." />
+            <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343034/samples/raphaelmelo/github_qx9fit.svg" alt="Logo github" title="Clique e acesse meu github." />
           </Link>
           <Link to="https://www.linkedin.com/in/raphaelgois/" target="_blank" className="link">
-            <img src={LinkedinLogo} alt="Logo Linkedin" title="Clique e acesse meu linkedin, conecte-se!" />
+            <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343034/samples/raphaelmelo/linkedin_mn9yw2.svg" alt="Logo Linkedin" title="Clique e acesse meu linkedin, conecte-se!" />
           </Link>
           <Link to="https://twitter.com/devr4pha" target="_blank" className="link">
-            <img src={TwitterLogo} alt="Logo Twitter" title="Estou no Twitter tbm. Segue lá!" />
+            <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343036/samples/raphaelmelo/twitter_dpf3wl.svg" alt="Logo Twitter" title="Estou no Twitter tbm. Segue lá!" />
           </Link>
         </WrapperItems>
       </SocialStyled>

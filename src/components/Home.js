@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Typography from '@material-ui/core/Typography'
 import Styled from 'styled-components'
-import Raphael from '.././images/rosto.webp'
-import ConfetesImage from '.././images/confetes.svg'
-import ReactLogo from '.././images/react.svg'
+import Container from '@material-ui/core/Container'
 import SocialMedia from './socialMedia'
 import Fade from 'react-reveal/Fade'
-import Container from '@material-ui/core/Container'
 
 const HomeStyled = Styled.main`
-    height:77vh;
+    height:80vh;
     display:flex;
     align-items:center;
     justify-content:space-evenly;
@@ -149,19 +146,19 @@ const Home = () => {
           <RostoStyled>
             <ReactLogoDiv>
               <img
-                src={ReactLogo}
+                src="https://res.cloudinary.com/doligjahp/image/upload/v1616343035/samples/raphaelmelo/react_kem21f.svg"
                 className="rotateAnimation  reactLogo"
                 alt="React"
               />
               <img
-                src={ConfetesImage}
+                src="https://res.cloudinary.com/doligjahp/image/upload/v1616343037/samples/raphaelmelo/confetes_vbmwcr.svg"
                 className="confetesImage Head"
                 alt="confetesImage"
               />
             </ReactLogoDiv>
             <div className="boxHead">
               <img
-                src={Raphael}
+                src="https://res.cloudinary.com/doligjahp/image/upload/v1616343035/samples/raphaelmelo/rosto_u1diwh.webp"
                 alt="rosto do raphael melo"
                 className="Head"
                 title="Oi, sou o rosto do Rapha!"

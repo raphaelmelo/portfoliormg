@@ -9,6 +9,7 @@ import SoftSkills from "../components/Softskills"
 import Formation from "../components/Formation"
 import Portfolio from "../components/Portfolio"
 import Contact from "../components/Contact"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 const IndexPage = () => {

@@ -4,12 +4,6 @@ import Styled from 'styled-components'
 import Fade from 'react-reveal/Fade'
 import { Link } from "gatsby"
 
-
-import GithubLogo from '../images/github.svg'
-import LinkedinLogo from '../images/linkedin.svg'
-import TwitterLogo from '../images/twitter.svg'
-
-
 const WrapperContact = Styled.section`
   height: auto;
   width:100%;
@@ -97,7 +91,7 @@ const Contact = () => {
           <Fade
             left={isDesktop}
             bottom={isMobile}
-            duration={1000}
+            duration={500}
             delay={500}
             distance="30px"
           >
@@ -114,19 +108,28 @@ const Contact = () => {
               </Typography>
             </>
           </Fade>
-          <SocialStyled>
-            <Link to="https://github.com/raphaelmelo/" target="_blank" >
-              <img src={GithubLogo} alt="Logo github" title="Clique e acesse meu github." />
-            </Link>
-            <Link to="https://www.linkedin.com/in/raphaelgois/" target="_blank" >
-              <img src={LinkedinLogo} alt="Logo Linkedin" title="Clique e acesse meu linkedin, conecte-se!" />
-            </Link>
-            <Link to="https://twitter.com/devr4pha" target="_blank" >
-              <img src={TwitterLogo} alt="Logo Twitter" title="Estou no Twitter tbm. Segue lá!" />
-            </Link>
-          </SocialStyled>
-        </TextWrapperStyled>
 
+          <Fade
+            left={isDesktop}
+            bottom={isMobile}
+            duration={500}
+            delay={500}
+            distance="30px"
+          >
+            <SocialStyled>
+              <Link to="https://github.com/raphaelmelo/" target="_blank">
+                <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343034/samples/raphaelmelo/github_qx9fit.svg" alt="Logo github" title="Clique e acesse meu github." />
+              </Link>
+              <Link to="https://www.linkedin.com/in/raphaelgois/" target="_blank">
+                <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343034/samples/raphaelmelo/linkedin_mn9yw2.svg" alt="Logo Linkedin" title="Clique e acesse meu linkedin, conecte-se!" />
+              </Link>
+              <Link to="https://twitter.com/devr4pha" target="_blank">
+                <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343036/samples/raphaelmelo/twitter_dpf3wl.svg" alt="Logo Twitter" title="Estou no Twitter tbm. Segue lá!" />
+              </Link>
+            </SocialStyled>
+          </Fade>
+
+        </TextWrapperStyled>
 
       </WrapperContact>
 

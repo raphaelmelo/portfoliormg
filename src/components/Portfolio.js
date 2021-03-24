@@ -47,7 +47,8 @@ const FiltersWrapper = Styled.article`
       button { 
       margin-right:8px;
 
-        }
+    }
+  }
 
     button {
       width: 90px;
@@ -69,6 +70,7 @@ const FiltersWrapper = Styled.article`
       }
 
     }
+  }
  
 
 `
@@ -142,15 +144,6 @@ const Portfolio = () => {
   }, [])
 
   const dataProjects = [
-
-    {
-      name: 'Mila Descartaveis',
-      description: 'Site institucional da Mila Descartáveis',
-      type: 'Freela',
-      url: 'https://miladescartaveis.com.br/',
-      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/mila_pk8ue7.png',
-      tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
-    },
     {
       name: 'Marvel API',
       description: 'Javascript',
@@ -158,6 +151,14 @@ const Portfolio = () => {
       url: 'https://marvelapibyraphaelmelo.netlify.app/',
       image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505723/samples/raphaelmelo/marvel_nipjm8.png',
       tech: 'MVC: HTML, CSS, JAVASCRIPT,',
+    },
+    {
+      name: 'Mila Descartaveis',
+      description: 'Site institucional da Mila Descartáveis',
+      type: 'Freela',
+      url: 'https://miladescartaveis.com.br/',
+      image: 'https://res.cloudinary.com/doligjahp/image/upload/v1616505722/samples/raphaelmelo/mila_pk8ue7.png',
+      tech: 'website freela: HTML, CSS, JAVASCRIPT, NEXT JS, FIGMA, VERCEL;',
     },
     {
       name: 'BarDireirinho.com',
@@ -258,8 +259,8 @@ const Portfolio = () => {
             size="medium"
             onClick={handleFilter}
           >
-            {' '}
-            Todos{' '}
+
+            Todos
           </Button>
           <Button
             className="freelas"
@@ -267,8 +268,8 @@ const Portfolio = () => {
             size="medium"
             onClick={handleFreelasFilter}
           >
-            {' '}
-            Freelas{' '}
+
+            Freelas
           </Button>
           <Button
             className="projetos"
@@ -276,8 +277,8 @@ const Portfolio = () => {
             size="medium"
             onClick={handleProjectFilter}
           >
-            {' '}
-            Projetos{' '}
+
+            Projetos
           </Button>
         </FiltersWrapper>
         <PortfolioWrapper>{Filters}</PortfolioWrapper>

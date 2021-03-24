@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 
-import Poom from '../images/boom.svg'
+
 
 const WrapperStyled = Styled.section`
     min-height:85vh;
@@ -136,7 +136,11 @@ const HardSkills = () => {
 
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={450} distance="30px">
           <article className="stageAnimation">
-            <img src={Poom} className="box bounce-3" alt="Poom" title="Essas são algumas das Skills tecnicas do Rapha!" />
+            <img
+              src="https://res.cloudinary.com/doligjahp/image/upload/v1616343037/samples/raphaelmelo/boom_zmx7uc.svg"
+              className="box bounce-3"
+              alt="Boom"
+              title="Essas são algumas das Skills tecnicas do Rapha!" />
           </article>
         </Fade>
 

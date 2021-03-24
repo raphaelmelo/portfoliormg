@@ -3,7 +3,6 @@ import Typography from '@material-ui/core/Typography';
 import Styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 
-import Zap from '../images/zap.svg'
 
 const WrapperStyled = Styled.section`
     min-height:85vh;
@@ -57,7 +56,6 @@ const SkillsWrapperStyled = Styled.article`
         span {
           color: #82C7F1;
         }
-
 
       }
 
@@ -124,7 +122,11 @@ const Formation = () => {
 
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <article class="stageAnimation">
-            <img src={Zap} className="box bounce-3" alt="Zap!" title="Essas são as principais formações do Rapha!" />
+            <img
+              src="https://res.cloudinary.com/doligjahp/image/upload/v1616343037/samples/raphaelmelo/zap_lxnpdk.svg"
+              className="box bounce-3"
+              alt="Zap!"
+              title="Essas são as principais formações do Rapha!" />
           </article>
         </Fade>
       </SkillsWrapperStyled>
