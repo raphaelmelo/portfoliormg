@@ -106,6 +106,7 @@ const TitleStyled = Styled.article`
         font-family: Bangers;
         text-transform: uppercase;
         line-height: 90%;
+        font-size:60px;
         font-size:clamp(3.2rem, 6vw, 6rem)
 
       } 
@@ -114,6 +115,8 @@ const TitleStyled = Styled.article`
 
       }
       .textDescription {
+        font-size:30px;
+
         font-size:clamp(26px, 4vw, 2.4rem)
 
       }

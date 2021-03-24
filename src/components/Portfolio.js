@@ -40,17 +40,25 @@ const FiltersWrapper = Styled.article`
     display:flex;
     align-items:center;
     justify-content:flex-start;
-    gap:20px;
-           
+    
+    @media (max-width: 425px){
+      justify-content:center;
+
+      button { 
+      margin-right:8px;
+
+        }
+
     button {
-      width: 200px;
+      width: 90px;
       height: 40px;
       color:#fff;
       border-radius: 4px;
       text-transform:uppercase;
-      font-size:clamp(0.6rem, 75%, 4rem);
+      font-size:clamp(0.5rem, 75%, 4rem);
       background: #0B3D61; 
-       
+      margin-right:20px;
+
        :hover{
         background: #00c2ff; 
 
