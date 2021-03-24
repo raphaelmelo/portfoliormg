@@ -113,13 +113,25 @@ const HardSkills = () => {
   return (
     <WrapperStyled>
       <TextWrapperStyled>
-        <Fade left={isDesktop} bottom={isMobile} duration={10} delay={200} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={150}
+          delay={300}
+          distance="30px"
+        >
           <Typography variant="h2" components="h2">HardSkills</Typography>
         </Fade>
       </TextWrapperStyled>
 
       <SkillsWrapperStyled>
-        <Fade left={isDesktop} bottom={isMobile} duration={10} delay={200} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={150}
+          delay={300}
+          distance="30px"
+        >
           <article>
             <p>HTML5</p>
             <p>CSS3</p>
@@ -134,7 +146,13 @@ const HardSkills = () => {
           </article>
         </Fade>
 
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={450} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={150}
+          delay={300}
+          distance="30px"
+        >
           <article className="stageAnimation">
             <img
               src="https://res.cloudinary.com/doligjahp/image/upload/v1616343037/samples/raphaelmelo/boom_zmx7uc.svg"

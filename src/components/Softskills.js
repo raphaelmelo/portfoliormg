@@ -104,12 +104,16 @@ const SoftSkills = () => {
     }
   }, []);
 
-
-
   return (
     <WrapperStyled>
       <TextWrapperStyled>
-        <Fade left={isDesktop} bottom={isMobile} duration={400} delay={400} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={150}
+          delay={300}
+          distance="30px"
+        >
           <Typography variant="h2" components="h1">SoftSkills</Typography>
         </Fade>
       </TextWrapperStyled>
@@ -124,7 +128,13 @@ const SoftSkills = () => {
             <p>proatividade</p>
           </article>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={400} delay={400} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={150}
+          delay={300}
+          distance="30px"
+        >
           <article class="stageAnimation">
             <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343037/samples/raphaelmelo/wow_vdqesf.svg" className="box bounce-3" alt="Imagem com texto: Wow!" title="Essas são algumas das Softskills do Rapha!" />
           </article>

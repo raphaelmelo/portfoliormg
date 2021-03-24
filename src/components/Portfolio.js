@@ -214,7 +214,7 @@ const Portfolio = () => {
           <Fade
             left={isDesktop}
             bottom={isMobile}
-            duration={300}
+            duration={150}
             delay={300}
             distance="30px"
           >
@@ -236,8 +236,8 @@ const Portfolio = () => {
         <Fade
           left={isDesktop}
           bottom={isMobile}
-          duration={1000}
-          delay={500}
+          duration={150}
+          delay={300}
           distance="30px"
         >
           <>

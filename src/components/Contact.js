@@ -56,7 +56,7 @@ const FooterContact = Styled.footer`
     justify-content:center;
     text-align:center;
 
-  h6 {
+  h4 {
     font-size:10px;
     color: #ddd;
     font-family:sans-serif;
@@ -91,8 +91,8 @@ const Contact = () => {
           <Fade
             left={isDesktop}
             bottom={isMobile}
-            duration={500}
-            delay={500}
+            duration={150}
+            delay={300}
             distance="30px"
           >
             <>
@@ -101,9 +101,9 @@ const Contact = () => {
               </Typography>
               <Typography variant="h2" components="h2">
                 <span>
-                  <Link to="mailto:contatowbm@gmail.com/" target="_blank" className="link">EMAIL</Link>
+                  <Link to="mailto:contatowbm@gmail.com/" rel="noreferrer" target="_blank" className="link">EMAIL</Link>
                   <span> OU </span>
-                  <Link to="https://www.linkedin.com/in/raphaelgois/" target="_blank" className="link">Linkedin</Link>
+                  <Link to="https://www.linkedin.com/in/raphaelgois/" rel="noreferrer" target="_blank" className="link">Linkedin</Link>
                 </span>!
               </Typography>
             </>
@@ -112,18 +112,18 @@ const Contact = () => {
           <Fade
             left={isDesktop}
             bottom={isMobile}
-            duration={500}
-            delay={500}
+            duration={150}
+            delay={300}
             distance="30px"
           >
             <SocialStyled>
-              <Link to="https://github.com/raphaelmelo/" target="_blank">
+              <Link to="https://github.com/raphaelmelo/" rel="noreferrer" target="_blank">
                 <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343034/samples/raphaelmelo/github_qx9fit.svg" alt="Logo github" title="Clique e acesse meu github." />
               </Link>
-              <Link to="https://www.linkedin.com/in/raphaelgois/" target="_blank">
+              <Link to="https://www.linkedin.com/in/raphaelgois/" rel="noreferrer" target="_blank">
                 <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343034/samples/raphaelmelo/linkedin_mn9yw2.svg" alt="Logo Linkedin" title="Clique e acesse meu linkedin, conecte-se!" />
               </Link>
-              <Link to="https://twitter.com/devr4pha" target="_blank">
+              <Link to="https://twitter.com/devr4pha" rel="noreferrer" target="_blank">
                 <img src="https://res.cloudinary.com/doligjahp/image/upload/v1616343036/samples/raphaelmelo/twitter_dpf3wl.svg" alt="Logo Twitter" title="Estou no Twitter tbm. Segue lá!" />
               </Link>
             </SocialStyled>
@@ -135,7 +135,7 @@ const Contact = () => {
 
 
       <FooterContact>
-        <h6>desing & desenvolvimento por raphael melo © {Year.getFullYear()} | GatsbyJs ❤</h6>
+        <h4>desing & desenvolvimento por raphael melo © {Year.getFullYear()} | GatsbyJs ❤</h4>
       </FooterContact>
 
 

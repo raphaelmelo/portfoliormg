@@ -112,7 +112,13 @@ const Formation = () => {
 
       <SkillsWrapperStyled>
 
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={450} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={150}
+          delay={300}
+          distance="30px"
+        >
           <article>
             <p>ADS <span>-</span> FACULDADE IMPACTA <span>01/21 - 06/23</span></p>
             <p>SISTEMAS PARA INTERNET <span>-</span> SENAI <span>09/20 - 03/22</span></p>
@@ -120,7 +126,14 @@ const Formation = () => {
           </article>
         </Fade>
 
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={150}
+          delay={300}
+          distance="30px"
+        >
           <article class="stageAnimation">
             <img
               src="https://res.cloudinary.com/doligjahp/image/upload/v1616343037/samples/raphaelmelo/zap_lxnpdk.svg"
