@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Helmet  >
         <meta charSet="utf-8" />
         <title>Raphael Melo - Dev Front-end</title>
-        <meta name="description" content="Sou Desenvolvedor Front-end e esse é meu portfólio!" />
+        <meta name="description" content="Raphael Melo é desenvolvedor Front-end Javascript em constante estudo, no site você vai ver seu portfólio de projetos, freelas e estudos." />
         <meta name="image" content="https://res.cloudinary.com/doligjahp/image/upload/v1616343035/samples/raphaelmelo/rosto_u1diwh.webp" />
         <meta http-equiv="Content-Language" content="pt-br" />
       </Helmet>
